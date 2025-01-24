@@ -11,7 +11,7 @@ jobs:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.wxa4g.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
-      MONGODB_PASSWORD: j${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     # environment: testing
     runs-on: ubuntu-latest
